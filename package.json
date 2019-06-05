@@ -11,9 +11,9 @@
   "author": "Timothy J Fontaine <tjfontaine@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "ffi": "",
-    "ref": "",
-    "ref-array": "",
-    "ref-struct": ""
+    "ffi-napi": "",
+    "ref-napi": "",
+    "ref-array-di": "",
+    "ref-struct-di": ""
   }
 }
