@@ -1,10 +1,13 @@
 const libclang = require('../libclang')
 console.log(process.pid)
 const index = new libclang.Index(0, 1)
-const tu = new libclang.TranslationUnit.fromSource(index, 'd:\\projects\\skytech\\include\\st\\harvester\\jobs.h', ['-Id:\\projects\\skytech\\include']);
+const headerFilename = './test.h'
+const tu = new libclang.TranslationUnit.fromSource(index, headerFilename, []);
 
 function cb() {
-    console.log(this)
+    if (this.location.presumedLocation.filename === headerFilename) {
+        console.log(this.spelling)
+    }
     return 1
 }
 tu.cursor.visitChildren(cb);
