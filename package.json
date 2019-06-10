@@ -12,8 +12,12 @@
   "license": "MIT",
   "dependencies": {
     "ffi": "",
-    "ref": "",
-    "ref-array": "",
-    "ref-struct": ""
+    "ref": "https://github.com/ZFail/ref/tarball/master",
+    "ref-array": "https://github.com/ZFail/ref-array/tarball/master",
+    "ref-struct": "https://github.com/ZFail/ref-struct/tarball/master"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.7",
+    "expose-gc": "^1.0.0"
   }
 }
