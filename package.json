@@ -10,7 +10,7 @@
   ],
   "author": "Timothy J Fontaine <tjfontaine@gmail.com>",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
     "ffi": "",
     "ref": "",
     "ref-array": "",
